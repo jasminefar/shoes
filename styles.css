@@ -1,0 +1,91 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.shoe-container {
+    display: flex;
+    gap: 20px;
+}
+
+.shoe {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transform: rotate(-15deg);
+}
+
+.shoe-left {
+    transform: rotate(15deg);
+}
+
+.shoe-top {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 160px;
+    height: 100px;
+    background: #e6e6e6;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.lace {
+    width: 10px;
+    height: 60px;
+    background: #333;
+    border-radius: 5px;
+}
+
+.shoe-body {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 160px;
+    height: 200px;
+    background: #e6e6e6;
+    border-radius: 0 0 20px 20px;
+    overflow: hidden;
+}
+
+.swoosh {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    width: 100px;
+    height: 50px;
+    background: #333;
+    clip-path: polygon(0 0, 50% 100%, 100% 0, 50% 100%);
+    transform: rotate(-45deg);
+}
+
+.details {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    width: 140px;
+    height: 20px;
+    background: #b3b3b3;
+    border-radius: 10px;
+}
+
+.shoe-sole {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: 160px;
+    height: 30px;
+    background: #333;
+    border-radius: 0 0 20px 20px;
+}
